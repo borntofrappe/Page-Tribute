@@ -29,6 +29,7 @@ Page tribute to a fictional character in a semi popular television series, G.O.B
     - index.html [HTML]
     - style.css [CSS]
     - script.js [JS|jQuery]
+    - mockup images [png]
   
 3. leverage *stock images* from [pexels](https://www.pexels.com/)
 
