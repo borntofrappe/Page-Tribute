@@ -1,4 +1,4 @@
-# Page-Tribute
+# Tribute Page
 Website to fulfill the first task in the front end development certification for FreeCodeCamp
 
 ## Task
