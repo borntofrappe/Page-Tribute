@@ -1,0 +1,178 @@
+/*
+import lato for the text and rozha for the floating card only
+from google fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Rozha+One');
+
+
+/*
+apply lato and a repeating linear gradient
+slightly grey bars running from the bottom left to the top right
+to the entirety of the page
+*/
+html, body, .container, .container-fluid {
+  font-family: 'Lato', sans-serif;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0,0,0,0.01),
+      rgba(0,0,0,0.01) 10px,
+      rgba(0,0,0,0.02) 10px,
+      rgba(0,0,0,0.02) 20px /* determines size */
+    );
+}
+
+
+/*
+for the floating card apply a repeating radial gradient with a purple display
+white color
+text and box shadow to elevate from the bottom
+border radius to avoid sharp corners
+fixed to the bottom right
+with a cursor pointer suggesting a click
+and some padding for text centering
+*/
+.illusion-card {
+  background: repeating-radial-gradient(
+  circle,
+  purple,
+  purple 10px,
+  #4b026f 10px,
+  #4b026f 20px
+);
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  text-shadow: 2px 5px 5px black;
+  box-shadow: 2px 1px 10px black;
+  border-radius: 12px 4px;
+  position: fixed;
+  right: 15px;
+  bottom: 12px;
+  z-index: 125;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+
+/*
+for the header1 of the floating card
+apply the only other font available
+with double text underline
+*/
+.illusion-card h1 {
+  font-family: 'Rozha One', serif;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+
+/*
+for the titles, the text and the punchline segments
+occupy only the space of the content
+force apply white background
+add a sharp border of black color and apply margin vertically of 12px
+*/
+.jumbotron, .list-no-bullet, .punchline {
+  display: inline-block;
+  background-color: #FFF !important;
+  border: 3px inset #000;
+  border-radius: 0;
+  margin: 12px;
+}
+
+
+
+/*
+for the underline class add underline and increase font size
+(this is the span used to style especially parts of the jumbotron)
+*/
+.underline {
+  text-decoration: underline !important;
+  font-size: 4.5rem;
+}
+
+
+/*
+for the text pieces in form of unordered list
+remove the bullet point lists
+increase font size
+and distance the text slightly from the top
+*/
+.list-no-bullet ul {
+  margin-top: 6px;
+  list-style: none;
+  font-size: 2.5rem;
+}
+
+
+/*
+strikethrough class applying a line through the specified text
+of a slightly transparent black color
+*/
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: rgba(0,0,0,0.5);
+}
+
+
+/*
+for the images apply an inset border
+*/
+.img {
+  border: 4px inset #000;
+  border: 6px inset #FFF;
+}
+
+
+/*
+for the image caption increase font size
+and make it italic
+*/
+.img-caption {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+
+/*
+for every link
+remove text decoration and apply the color of the page itself
+make it italic to stand out ever so slightly
+*/
+.link, .link:hover, .link:active, .link:visited {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+
+/*
+when hovering over the link change color to white and background color to a nice crispy orange
+*/
+.link:hover {
+  background-color: rgba(255,0,0,0.8);
+  color:#FFF;
+}
+
+
+/*
+for the divider three dots increase size by a considerable ammount
+increase margin especially below
+*/
+.divider {
+  font-size: 5rem;
+  margin: 8px 0 36px 0;
+}
+
+
+/*
+for the lego text apply a text shadow which gives a black border to the white text
+*/
+.lego {
+  color: #FFF;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-style: italic;
+}

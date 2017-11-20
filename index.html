@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G.O.B.</title>
+  <!--
+    link attributes to reference
+      - a custom css file
+      - a default icon
+      - bootstrap
+  -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" type="text/css" href="../../../Assets/Libraries/Bootstrap3/css/bootstrap.css">
+</head>
+
+<body>
+
+  <!--
+  PLAN
+  three to four sections presenting a general outlook on the subject matter
+  ** presenting the personality
+  ** presenting the family in very general terms
+  ** presenting the actor portraying the character
+
+  all sections should share
+  ** background
+  ** title and text nested inside a frame of a box
+  ** images with relevant background (contrasting background with respect to the underlying color and the color of the image itself)
+  ** at least a link toward external sources
+
+  using bootstrap to render the web page responsive the sections should occupy a specified amount of columns
+  as stated in every div
+  -->
+
+
+
+  <!-- container-fluid div wrapping the entirety of the page -->
+  <div class="container-fluid">
+
+    <!-- row for the title of the first section -->
+    <div class="row">
+      <!-- jumbotron wrapping the title
+      large screen: offset by 1, occupying 6 columns
+      medium: offset by 2, occupying 4 columns
+      small and extra small: offset by 1, occupying 10
+      -->
+      <div class="jumbotron col-lg-6 col-md-4 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+        <h2>Meet <a class="link underline" href="http://arresteddevelopment.wikia.com/wiki/G.O.B.">George Oscar Bluth</a></h2>
+      </div><!-- close jumbotron div -->
+    </div><!-- close row div -->
+
+    <!--
+    row to encompass text and image and image
+    -->
+    <div class="row">
+      <!--
+        div for the text in the first section, providing an unordered list that should have no bullet points whatsoever
+        large and medium screen: offset by 2, occupying 3
+        small and extra small: offset by 3, occupy  6
+      -->
+      <div class="list-no-bullet col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-2 col-md-offset-2 col-sm-offset-3 col-xs-offset-3">
+        <ul>
+          <li class="strikethrough">Magician</li>
+          <li class="strikethrough">President of Industry</li>
+          <li class="strikethrough">Limousine driver</li>
+          <li class="strikethrough">Bee keeper</li>
+          <li>Currently unknown</li>
+        </ul>
+      </div><!-- close div for the text formatted in an unordered list -->
+
+      <!--
+      div for the image, with border clearly visible and a small caption beneath
+      large and medium screen:  no offset, occupying 4
+      small and extra small: offset by 2, occupy 8
+      -->
+      <div class="image-with-caption col-lg-4 col-md-4 col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2">
+        <img class="img img-responsive" src="https://static.pexels.com/photos/547593/pexels-photo-547593.jpeg" alt="Stock Magician Picture" title="Stock Magician Picture">
+        <div class="img-caption">Not actual G.O.B.</div>
+      </div><!--  close div for the image with caption -->
+
+    </div><!-- close row -->
+
+
+
+    <!-- div to signal the end of a section and the beginning of the following one -->
+    <div class="text-center divider">
+      ...
+    </div><!-- close separator div -->
+
+
+
+    <!-- row for the title of the second section
+    large screen: offset by 5 occupying 6
+    medium: offset by 2, occupying 4 columns
+    small and extra small: offset by 1, occupying 10
+    -->
+    <div class="row">
+      <!-- jumbotron wrapping the title -->
+      <div class="jumbotron col-lg-6 col-md-4 col-sm-10 col-xs-10 col-lg-offset-5 col-md-offset-6 col-sm-offset-1 col-xs-offset-1">
+        <h2>Meet the family of <a class="link underline" href="https://vignette.wikia.nocookie.net/arresteddevelopment/images/7/79/GOB_on_segway.jpg/revision/latest?cb=20111216181525">el hermano</a></h2>
+      </div><!-- closing jumbotron div -->
+    </div><!-- close row div for title -->
+
+
+
+    <!--
+      row for the text of the second section
+      with the position of text and image reversed in comparison to the first section
+    -->
+    <div class="row">
+      <!--
+        div for the second image with caption
+        large and medium screen:  no offset, occupying 4
+        small and extra small: offset by 1, occupy 10
+      -->
+      <div class="image-with-caption col-lg-4 col-md-4 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1">
+        <img class="img img-responsive" src="https://static.pexels.com/photos/159864/waterfowl-mallard-young-young-duck-159864.jpeg" alt="Stock Ducks Picture" title="Stock Ducks Picture">
+        <div class="img-caption">Not actual Bluth family</div>
+      </div><!-- close div for the image with caption -->
+
+
+      <!--
+        div for the second text, again leveraging an unordered list with no bullet point
+        large and medium screen: no offset, occupying 5
+        small and extra small: offset by 1, occupy 10
+      -->
+      <div class="list-no-bullet col-lg-5 col-md-5 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1">
+        <ul>
+          <li>Son of George Bluth and Lucille Bluth </li>
+          <li>Brother of Michael, Lindsay, Buster</li>
+          <li>Uncle of George Michael and Maybe</li>
+          <li>Father of Steve</li>
+          <li>Also, kinda brother of Annyong</li>
+        </ul>
+      </div><!-- close div for the text in form of unordered list  -->
+    </div><!-- close row div for image and text -->
+
+
+    <!--
+      excess row for the punchline #1
+      occupying less space than the above text, and slighty pushed further away from the same
+      large and medium screen: offset by 6, occupying 4
+      small and extra small: offset by 5, occupy 5
+    -->
+    <div class="row">
+      <div class="punchline text-center col-lg-4 col-md-4 col-sm-5 col-xs-5 col-lg-offset-6 col-md-offset-6 col-sm-offset-5 col-xs-offset-5">
+        <h2>I have made a huge mistake</h2>
+        <h4>But the family tree is rather
+          <!-- link to detailed family tree  -->
+          <a class="link" href="http://modernroots.com/prod-arrested-development.html">complicated</a>
+        </h4>
+      </div><!-- close div for the punchline -->
+    </div><!-- close row div for the first punchline-->
+
+
+
+    <!-- div to signal the end of a section and the beginning of the following one -->
+    <div class="text-center divider">
+      ...
+    </div><!-- close separator div -->
+
+
+
+    <!-- row for the title of the third section -->
+    <div class="row">
+      <!-- jumbotron wrapping the title
+      large screen: offset by 1, occupying 6 columns
+      medium: offset by 2, occupying 4 columns
+      small and extra small: offset by 1, occupying 10
+      -->
+      <div class="jumbotron col-lg-6 col-md-4 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+        <h2>Meet <a class="link underline" href="https://en.wikipedia.org/wiki/Will_Arnett">Will Emerson Arnett</a></h2>
+      </div><!-- closing jumbotron div -->
+    </div><!-- close row div -->
+
+    <!--
+      row for the third section
+      with the same structure of the first section
+    -->
+    <div class="row">
+      <!--
+        div for the third text in ul form
+        occupying and offset by the same amount of columns of the first section
+        exactly
+      -->
+      <div class="list-no-bullet col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-2 col-md-offset-2 col-sm-offset-3 col-xs-offset-3">
+        <ul>
+          <li>Actor</li>
+          <li>Voice actor</li>
+          <li>Comedian</li>
+        </ul>
+      </div><!-- close div for text and unordered list -->
+
+      <!--
+        div for the third image with caption
+      -->
+      <div class="image-with-caption col-lg-4 col-md-4 col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2">
+        <img class="img img-responsive" src="https://static.pexels.com/photos/274937/pexels-photo-274937.jpeg" alt="Stock Clapper Picture" title="Stock Clapper Picture">
+        <div class="img-caption">Not actual Will Arnett</div>
+      </div><!-- close div for image with caption -->
+
+    </div><!-- close row div for the text and image of the third row -->
+
+
+
+    <!--
+      div for the row of the second punchline
+      mirroring the first punchline in spacing
+      large and medium screen: offset by 1 occupying 4
+      small and extra small: offset by 2, occupy 6
+    -->
+    <div class="row">
+      <div class="punchline text-center col-lg-4 col-md-4 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 col-xs-offset-2">
+        <h2>I could suggest <span class="lego">the lego movie</span> to you</h2>
+        <h4>But you are likely to find something you like in his
+          <a class="link" href="https://en.wikipedia.org/wiki/Will_Arnett#Filmography">filmography</a>
+        </h4>
+      </div><!-- close div for the second punchline -->
+
+    </div><!-- close row div for the second punchline -->
+
+
+
+
+
+    <!--
+    floating card containing two small sentences
+    in js  jquery function to fade out card upon click
+    -->
+    <div class="container-fluid illusion-card text-center" title="Fading">
+      <h3>It's not a trick, Michael...</h3>
+      <h1>It's an illusion </h1>
+    </div><!-- close div for the floating card -->
+
+
+
+
+  </div><!--  close container-fluid div wrapping the entirety of the page -->
+
+
+
+  <!--
+    link a script for
+      - jquery.js
+      - bootstrap.js
+      - a js script
+  -->
+<script src="../../../Assets/Libraries/Jquery/jquery-3.2.1.js"></script>
+<script src="../../../Assets/Libraries/Bootstrap3/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
