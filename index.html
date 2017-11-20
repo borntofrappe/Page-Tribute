@@ -5,12 +5,13 @@
   <!--
     link attributes to reference
       - a custom css file
-      - a default icon
-      - bootstrap
+      - bootstrap (through downloaded file or cdn)
   -->
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" href="icon.png">
-  <link rel="stylesheet" type="text/css" href="../../../Assets/Libraries/Bootstrap3/css/bootstrap.css">
+    <!-- 
+      <link rel="stylesheet" type="text/css" href="../../../Assets/Libraries/Bootstrap3/css/bootstrap.css"> 
+    -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -241,13 +242,23 @@
 
   <!--
     link a script for
-      - jquery.js
-      - bootstrap.js
+      - jquery.js (through downloaded version or through cdn)
+      - bootstrap.js (through downloaded version or through cdn)
       - a js script
   -->
-<script src="../../../Assets/Libraries/Jquery/jquery-3.2.1.js"></script>
-<script src="../../../Assets/Libraries/Bootstrap3/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+  <!--
+    <script src="../../../Assets/Libraries/Jquery/jquery-3.2.1.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--
+    <script src="../../../Assets/Libraries/Bootstrap3/js/bootstrap.min.js"></script>
+  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <!--
+    remember to load a possible script **AFTER** you reference the library of which you make use
+  -->
+  <script src="script.js"></script>
 
 </body>
 </html>
