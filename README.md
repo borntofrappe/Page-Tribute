@@ -31,3 +31,9 @@ Page tribute to a fictional character in a semi popular television series, G.O.B
     - script.js [JS|jQuery]
   
 3. leverage *stock images* from [pexels](https://www.pexels.com/)
+
+---
+
+Feel free to download, suggest or critique
+
+Even though there's very litte content, I must admit
